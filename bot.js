@@ -18,7 +18,7 @@ client.on("ready", () => {
 });
 
 client.on("guildMemberAdd", (member) => {
-  defaultChannel.send("Welcome "+member+"!\nHave fun and type '"+auth.prefix+"agree' after you read the rules in #info");
+  m.guild.channel.find("name", "welcome").send("Welcome "+member+"!\nHave fun and type '"+auth.prefix+"agree' after you read the rules in #info");
 });
 
 client.on("message", (message) => {
