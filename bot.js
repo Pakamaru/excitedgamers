@@ -43,7 +43,7 @@ client.on("message", (message) => {
 
 
 });
-client.login(process.env.auth.token);
+client.login(process.env.BOT_TOKEN);
 
 function accept_(m){
   let member = m.guild.member(m.author);
